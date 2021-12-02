@@ -1,7 +1,8 @@
 # Author: ATN 12/1/21
 
 def anagram(a, b):
-    '''This program allows you to check if your input ()'''
+    '''This program allows you to check if your input is an anagram of
+    itself'''
 
     ana_sorted = list(a)
     ana_sorted.sort()
@@ -20,4 +21,6 @@ def anagram(a, b):
             )
 
 
-print(anagram("a", 'a'))
+response_1 = input("Please enter a word: ")
+response_2 = input("Please enter another word: ")
+print(anagram(response_1, response_2))
