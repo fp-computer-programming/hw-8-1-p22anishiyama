@@ -11,16 +11,14 @@ def anagram(a, b):
 
     if(ana_sorted == ana_sorted_2nd):
         return(
-            "The word {0} is an anagram of {1}."
-            .format(a, b)
+            "true"
             )
     else:
         return(
-            "The word {0} is not an anagram of {1}."
-            .format(a, b)
+            "false"
             )
 
 
-response_1 = input("Please enter a word: ")
-response_2 = input("Please enter another word: ")
-print(anagram(response_1, response_2))
+print(anagram("listen", "silent") == "true")
+print(anagram("the", "bats") == "false")
+print(anagram("the morse code", "here come dots") == "true")
